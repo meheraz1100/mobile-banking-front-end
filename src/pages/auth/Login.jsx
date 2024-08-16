@@ -13,7 +13,7 @@ export default function Login() {
     return (
         <div className="min-h-screen flex justify-center items-center">
             <div className="  bg-base-200 shadow-lg h-1/2 py-20 rounded-xl">
-                <div className="flex flex  gap-5 lg:flex-row-reverse px-10 ">
+                <div className="flex gap-5 lg:flex-row-reverse px-10 ">
 
                     <div className="  w-full max-w-xl ">
                         <form className="" onSubmit={handleLogin}>
@@ -47,7 +47,7 @@ export default function Login() {
 
                         </div>
                         <div>
-                            <p>Don't  have any account ? <Link className="text-primary" to={'/register'}>Register </Link></p>
+                            <p>Dont  have any account ? <Link className="text-primary" to={'/register'}>Register </Link></p>
                         </div>
                     </div>
                 </div>

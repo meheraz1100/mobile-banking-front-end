@@ -12,7 +12,17 @@ export default function Register() {
         const role = form.accountType.value;
         const password = form.password.value;
 
-        console.log({ fullName, phoneNumber, email, nid, role, password })
+        const data = { fullName, phoneNumber, email, nid, role, password };
+
+        fetch('http://localhost:3000/register', {
+            method: 'POST',
+            body: JSON.stringify(data),
+            headers: {
+                "content-type": "application/json"
+            }
+        })
+        .then(res => res.json())
+        .then(data => console.log(data));
     }
     return (
         <div className="min-h-screen flex justify-center items-center">
